@@ -502,6 +502,12 @@
   .w-5 {
     width: calc(var(--spacing) * 5);
   }
+  .w-10 {
+    width: calc(var(--spacing) * 10);
+  }
+  .w-100 {
+    width: calc(var(--spacing) * 100);
+  }
   .w-full {
     width: 100%;
   }
@@ -1117,6 +1123,9 @@
   }
   .border-red-500 {
     border-color: var(--color-red-500);
+  }
+  .border-slate-300 {
+    border-color: var(--color-slate-300);
   }
   .border-white {
     border-color: var(--color-white);
@@ -2032,6 +2041,16 @@
   .lg\:grid-cols-3 {
     @media (width >= 64rem) {
       grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+  .dark\:overflow-auto {
+    @media (prefers-color-scheme: dark) {
+      overflow: auto;
+    }
+  }
+  .dark\:overflow-visible {
+    @media (prefers-color-scheme: dark) {
+      overflow: visible;
     }
   }
   .dark\:bg-slate-200 {
