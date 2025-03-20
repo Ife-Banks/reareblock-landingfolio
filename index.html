@@ -6,8 +6,8 @@
     <link rel="stylesheet" href="./src/output.css">
     <title>Document</title>
 </head>
-<body class="text-gray-600 font-body">
-     <div class="grid md:grid-cols-3"><!--content wrapper-->
+<body class="text-gray-600 font-body ">
+     <div class="grid md:grid-cols-3 "><!--content wrapper-->
         <div class="md:col-span-1 md:flex md:justify-end dark:bg-slate-300">
             <nav class="text-right">
                 <div class="flex justify-between items-center">
@@ -109,16 +109,61 @@
                         </div>
                     </div>
 
-                    <h4 class="mt-12 font-bold pb-2 borber-b border-gray-200">Most popular</h4>
-                    <div class="mt-8">
-                        <!--CArds go here-->
+                   
 
+                </div>
+                <h4 class="mt-12 font-bold pb-2 borber-b border-gray-200">Most popular</h4>
+                <div class="mt-8 ">
+                    <!--CArds go here-->
+                    <div class="mt-8 grid lg:grid-cols-3 gap-10">
+                        <!--Cards go here-->
+                        <div  class="card hover:shadow-lg">
+                            <img src="./public/img/stew.jpg" alt="" class="w-full h-32 sm:h-48 object-cover">
+                            <div class="m-4">
+                                <span class="font-bold">5 Bean chill stew</span>
+                                <span class="block text-gray-500 text-sm">Recipe by Ife</span>
+                            </div>
+                            <div class="badge">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4 inline-block w-5">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                                  </svg>
+                                  
+                                <span>25 mins</span>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="./public/img/noodles.jpg" alt="noodles" class="w-full h-32 sm:h-48 object-cover">
+                            <div class="m-4">
+                                <span class="font-bold">Veg noodles</span>
+                                <span class="block text-gray-500 text-sm">Recipe by Ife</span>
+                            </div>
+                            <div class="badge ">
+                                <svg class="w-4 inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                                  </svg>
+                                <span>25 mins</span>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="./public/img/curry.jpg" alt="curry" class="w-full h-32 sm:h-48 object-cover">
+                            <div class="m-4">
+                                <span class="font-bold">Tofu Curry</span>
+                                <span class="block text-gray-500 text-sm">Recipe by Ife</span>
+                            </div>
+                            <div class="badge">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4 inline-block w-5">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                                  </svg>
+                                <span>25 mins</span>
+                            </div>
+                        </div>
                     </div>
+                    
 
                 </div>
                 
-                <div class="flex justify-center">
-                    <div class="btn bg-gray-300 p-1 hover:shadow-inner transform hover:scale-125 hover:bg-opacity-50  transition ease-out duration-300">Load more</div>
+                <div class="flex justify-center mt-4">
+                    <div class="btn bg-gray-300 p-1  hover:shadow-inner transform hover:scale-125 hover:bg-opacity-50  transition ease-out duration-300">Load more</div>
                 </div>
             </div>
         </main>
