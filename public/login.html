@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/output.css">
+    <title>Document</title>
+</head>
+<body class="text-gray-600 font-body ">
+     <div class="grid md:grid-cols-3 justify-center"><!--content wrapper-->
+        <div class="md:col-span-1 md:flex md:justify-end dark:bg-slate-300 ">
+            <nav class="text-right ">
+                <div class="flex justify-between items-center ml-2">
+                    <h1 class="font-bold uppercase p-4 border-b border-gray-100 hover:font-bolder">
+                        <a href="/" class="hover:text-gray-700 " >Food Ninja</a>
+                    </h1>
+                </div>
+                <ul class="text-sm  mt-6 flex md:block mr-1 justify-evenly" id="menu">
+                    <li class="text-gray-700 font-bold py-1 ">
+                        <a href="/" class="px-4 flex md:justify-end items-center md:border-r-4 md:border-red-400">
+                            <span class="">Home</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class=" size-6 w-5 ml-2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                              </svg>
+                              
+                        </a>
+                    </li>
+                    <li class="py-1">
+                        <a href="#" class="px-4 flex md:justify-end items-center md:border-r-4 md:border-slate-300">
+                            <span>About</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 w-5 ml-2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" />
+                              </svg>
+                              
+                        </a>
+                    </li>
+                    <li class="py-1">
+                        <a href="#" class="px-4 flex md:justify-end items-center md:border-r-4 md:border-slate-300">
+                            <span>Contact us</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 w-5 ml-2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+                              </svg>
+                              
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div><!--ENd nav-->
+
+        <main class="px-16 py-6 bg-gray-100 md:col-span-2 ">
+            <div class=" block justify-center justify-items-center">
+                <a href="#" class="text-6xl mt-4 text-red-500 font-bold ">LOGIN</a>
+                <p class="mt-10 text-lg">More that <span>35000</span> recipes around the world</p>
+            </div>
+            <div>
+                <form action="" class="mt-4 shadow-sm border-2 border-gray-300  flex flex-col gap-y-8 w-40% p-5 p-10">
+                    <input type="email" name="email" id="email" class="h-12 w-full border border-gray-300 px-3 py-2 rounded-full shadow-sm focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 hover:shadow-lg" placeholder="Enter your email">
+                    <input type="password" name="" class="h-12 mt-3 w-full px-3 py-2 border border-gray-300 shadow-sm focus:outline-none rounded-full focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 hover:shadow-lg" placeholder="Password">
+                    <div class="flex justify-evenly">
+                        <span class="flex justify-evenly items-center ">
+                            <input type="checkbox" name="" id="" class="w-5">
+                            <p class="text-lg">Remember me</p>
+                        </span>
+                        <a href="/" class="text-lg">
+                            forgot password
+                        </a>
+                    </div>
+                   <div class="flex items-center">
+                    <hr class="w-30 text-gray-500">
+                    <span class="w-50 justify-center items-center mx-auto flex rounded-full py-2 px-3 shadow-md border border-gray-300 transform hover:scale-110 transition ease-out duration-300">
+                        
+                        <a href="" class="text-xl font-extrabold">Login</a>
+                    </span>
+                    <hr class="w-30 text-gray-500">
+                   </div>
+                </form>
+            </div>
+            <footer>
+                <aside class="mt-15 flex justify-center items-center gap-x-2">
+                    <hr class="w-30">
+                    <div class="  px-3 py-3">
+                        
+                    <p class="text-lg font-semibold">LOGIN WITH</p>
+                    
+                    </div>
+                    <hr class="w-30">
+                </aside>
+                <span class="flex justify-evenly items-center">
+                   <a href=" https://accounts.google.com/signin">
+                    <svg class="w-10 h-10" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M22.501 12.7332C22.501 11.8699 22.4296 11.2399 22.2748 10.5865H12.2153V14.4832H18.12C18.001 15.4515 17.3582 16.9099 15.9296 17.8898L15.9096 18.0203L19.0902 20.435L19.3106 20.4565C21.3343 18.6249 22.501 15.9298 22.501 12.7332Z" fill="#4285F4"/>
+                        <path d="M12.214 23C15.1068 23 17.5353 22.0666 19.3092 20.4567L15.9282 17.8899C15.0235 18.5083 13.8092 18.9399 12.214 18.9399C9.38069 18.9399 6.97596 17.1083 6.11874 14.5766L5.99309 14.5871L2.68583 17.0954L2.64258 17.2132C4.40446 20.6433 8.0235 23 12.214 23Z" fill="#34A853"/>
+                        <path d="M6.12046 14.5767C5.89428 13.9234 5.76337 13.2233 5.76337 12.5C5.76337 11.7767 5.89428 11.0767 6.10856 10.4234L6.10257 10.2842L2.75386 7.7356L2.64429 7.78667C1.91814 9.21002 1.50146 10.8084 1.50146 12.5C1.50146 14.1917 1.91814 15.79 2.64429 17.2133L6.12046 14.5767Z" fill="#FBBC05"/>
+                        <path d="M12.2141 6.05997C14.2259 6.05997 15.583 6.91163 16.3569 7.62335L19.3807 4.73C17.5236 3.03834 15.1069 2 12.2141 2C8.02353 2 4.40447 4.35665 2.64258 7.78662L6.10686 10.4233C6.97598 7.89166 9.38073 6.05997 12.2141 6.05997Z" fill="#EB4335"/>
+                        </svg>
+                   </a>
+                       <a href="https://twitter.com/login">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" version="1.1 " class="w-10 h-10"> <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/> </svg>
+                       </a>
+                       <a href="https://www.facebook.com/login">
+                        <svg class="w-10 h-10" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="24" cy="24" r="24" fill="#1877F2"/>
+                            <path d="M26.56 24h3.64l.54-4h-4.18v-2.57c0-1.16.32-1.95 1.96-1.95h2.13v-3.61C30.17 11.58 29.09 11 27.63 11c-3.1 0-5.07 1.89-5.07 5.35V20h-3.4v4h3.4v10h4.44V24z" fill="#fff"/>
+                          </svg>
+                       </a>
+
+                </span>
+            </footer>
+
+        </main>
+       
+     </div>
+     <script src="./public/index.js"></script>
+</body>
+</html>
