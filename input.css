@@ -12,5 +12,9 @@
 }
 
 .btn{
-    @apply rounded-full py-2 px-3 uppercase text-xs font-bold cursor-pointer tracking-wider;
+    @apply rounded-full py-2 px-3 uppercase text-xs font-bold cursor-pointer tracking-wider hover:scale-110 transform transition-discrete ease-out duration-300;
+}
+
+.hover{
+    @apply hover:scale-110 transform transition-discrete ease-out duration-300;
 }
