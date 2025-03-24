@@ -240,6 +240,9 @@
   .inline-block {
     display: inline-block;
   }
+  .table {
+    display: table;
+  }
   .size-4 {
     width: calc(var(--spacing) * 4);
     height: calc(var(--spacing) * 4);
@@ -293,11 +296,17 @@
   .w-full {
     width: 100%;
   }
+  .border-collapse {
+    border-collapse: collapse;
+  }
   .transform {
     transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
   }
   .cursor-pointer {
     cursor: pointer;
+  }
+  .resize {
+    resize: both;
   }
   .flex-col {
     flex-direction: column;
@@ -534,6 +543,9 @@
   .uppercase {
     text-transform: uppercase;
   }
+  .underline {
+    text-decoration-line: underline;
+  }
   .bg-blend-multiply {
     background-blend-mode: multiply;
   }
@@ -551,6 +563,10 @@
   .shadow-sm {
     --tw-shadow: 0 1px 3px 0 var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 1px 2px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .outline {
+    outline-style: var(--tw-outline-style);
+    outline-width: 1px;
   }
   .transition {
     transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, -webkit-backdrop-filter, backdrop-filter;
@@ -605,6 +621,30 @@
       @media (hover: hover) {
         background-position: center bottom;
       }
+    }
+  }
+  .group-focus\:translate-y-6 {
+    &:is(:where(.group):focus *) {
+      --tw-translate-y: calc(var(--spacing) * 6);
+      translate: var(--tw-translate-x) var(--tw-translate-y);
+    }
+  }
+  .group-focus\:translate-y-31 {
+    &:is(:where(.group):focus *) {
+      --tw-translate-y: calc(var(--spacing) * 31);
+      translate: var(--tw-translate-x) var(--tw-translate-y);
+    }
+  }
+  .group-active\:translate-y-6 {
+    &:is(:where(.group):active *) {
+      --tw-translate-y: calc(var(--spacing) * 6);
+      translate: var(--tw-translate-x) var(--tw-translate-y);
+    }
+  }
+  .group-active\:translate-y-31 {
+    &:is(:where(.group):active *) {
+      --tw-translate-y: calc(var(--spacing) * 31);
+      translate: var(--tw-translate-x) var(--tw-translate-y);
     }
   }
   .hover\:scale-100 {
@@ -1062,6 +1102,11 @@
   syntax: "*";
   inherits: false;
   initial-value: 0 0 #0000;
+}
+@property --tw-outline-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
 }
 @property --tw-duration {
   syntax: "*";
