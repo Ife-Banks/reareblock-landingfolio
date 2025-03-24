@@ -17,7 +17,7 @@
         <title>Document</title>
     </head>
     <body class="text-gray-600 font-body ">
-         <div class="grid md:grid-cols-5 h-screen "><!--content wrapper-->
+         <div class="grid md:grid-cols-5 "><!--content wrapper-->
             <div class="md:col-span-1 md:flex md:justify-end dark:bg-slate-300  ">
                 <nav class="text-right">
                     <div class="flex justify-between items-center">
@@ -32,8 +32,8 @@
                         </div>
                     </div>
                     <ul class="text-sm mt-6 hidden md:block mr-1 " id="menu">
-                        <li class="text-gray-700 hover:font-bold py-1">
-                            <a href="/" class="px-4 flex justify-end active:border-r-4 active:border-red-400 ">
+                        <li class="text-gray-700 hover:font-bold py-1 flex justify-end">
+                            <a href="/" class="px-4 flex justify-end active:border-r-4 active:border-red-400 items-center">
                                 <span class="hover">Home</span>
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 w-5 ml-2">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
@@ -41,7 +41,7 @@
                                   
                             </a>
                         </li>
-                        <li class="py-1 active:font-bold hover:font-bold">
+                        <li class="py-1 active:font-bold hover:font-bold ">
                             <a href="./about.html" class="px-4 flex justify-end border-r-4 border-red-400 border-r-4  hover:border-red-400 focus:border-red-400 focus:border-r-4 focus:border-red-400 ">
                                 <span class="hover">About</span>
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 w-5 ml-2">
@@ -65,12 +65,12 @@
             
            <main class="lg:flex lg:flex-row-reverse md:col-span-4 pl-10 pr-5 py-2 gap-x-4 w-full">
            
-            <a href="#" class="flex gap-x-5 h-150 lg:basis-1/5   w-90 mx-auto group  " >
-                <div class="bg-[url('/public/img/ife.jpg')] h-100 w-30  self-center rounded-3xl bg-cover border border-gray-300 shadow-sm 0  self-center rounded-3xl bg-cover bg-[center_right_15rem] group-hover:translate-y-31 transform transition-descrete  duration-600 ease-in group-active:translate-y-31 group-focus:translate-y-31">
+            <a href="#" class="flex gap-x-5 h-150 lg:basis-1/5   w-90 mx-auto group  mb-10 " >
+                <div class="bg-[url('/public/img/ife.jpg')] h-100 w-30  self-center rounded-3xl bg-cover border border-gray-300 shadow-sm 0  self-center rounded-3xl bg-cover bg-[center_right_15rem] group-hover:translate-y-31 transform transition-descrete  duration-600 ease-in group-active:translate-y-31 group-focus:translate-y-31 ">
             
                 </div>
                <!-- <img src="/public/img/R.png" alt="" srcset="" class="h-150 w-50 border self-end rounded-3xl object-cover object-[50%_20%] pb-0">-->
-                <div class="bg-[url('/public/img/ife.jpg'),url('/public/img/ife.jpeg')] bg-cover  h-100 w-30  self-end rounded-3xl border border-gray-300 shadow-sm bg-no-repeat   bg-[length:10px_10,5px_5px] bg-blend-normal  bg-[position:center_bottom_6rem,center_bottom_0rem] group-hover:translate-y-6 group-hover:bg-[position:center_bottom]   transform transition-discrete duration-700  ease-in group-focus:translate-y-6 group-active:translate-y-6" >
+                <div class="bg-[url('/public/img/ife.jpg'),url('/public/img/ife.jpeg')] bg-cover  h-100 w-30  self-end rounded-3xl border border-gray-300 shadow-sm bg-no-repeat   bg-[length:10px_10,5px_5px] bg-blend-normal  bg-[position:center_bottom_6rem,center_bottom_0rem] group-hover:translate-y-6 group-hover:bg-[position:center_bottom] group-active:bg-[position:center_bottom] group-focus:bg-[position:center_bottom]   transform transition-discrete duration-700  ease-in group-focus:translate-y-6 group-active:translate-y-6" >
                     <!-- content here -->
                   </div>
                     <div class="bg-[url('/public/img/ife.jpg')] h-100 w-30  self-center rounded-3xl bg-cover bg-[center_left_15rem] border border-gray-300 shadow-sm group-hover:translate-y-31 transform transition-descrete  duration-700 ease-in group-focus:translate-y-31 group-active:translate-y-31">
@@ -78,10 +78,10 @@
                     </div>
               
                </a>
-               <div class=" h-100 self-center justify-start w-full w-90 mx-auto mt-30  md:mt-1  lg:basis-4/5 ">
+               <div class=" h-100 self-center justify-start w-full w-90 mx-auto mt-30  md:mt-1  lg:basis-4/5 lg:basis:3/5  lg:w-50  box-border">
                 <h1 class="text-5xl font-bold px-3">About us</h1>
-                <h2 class="lg:text-xl text-2x font-semibold w-120 px-3 py-3">Bringing People Together Through the Love of Homemade Flavors.</h2>
-                <p class="px-3 py-2 text-justify lg:text-md text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ipsam ut porro, aut saepe hic sunt sint aperiam est molestias odio maiores debitis dolores veritatis eum soluta laudantium tempore non ab ullam optio? Harum, tempore vero voluptatem, molestias odio distinctio nemo numquam rerum fugiat quod non id eum dolore accusantium labore voluptate laboriosam quos error vitae velit esse eligendi consectetur ea. Aspernatur, assumenda numquam distinctio minima repellendus ab ducimus ipsa iusto, saepe quod, omnis dolorum ex provident perferendis quo quas ipsam quidem officia! Repellendus porro nam, ipsum eligendi quasi consectetur quas provident fugiat officiis doloremque autem assumenda asperiores ratione quidem!</p>
+                <h2 class="lg:text-lg text-2xl font-semibold w-120 lg:w-full px-3 py-3 box-border">Bringing People Together Through the Love of Homemade Flavors.</h2>
+                <p class="px-3 py-2 text-justify sm:text-sm text-xl xl:text-md">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ipsam ut porro, aut saepe hic sunt sint aperiam est molestias odio maiores debitis dolores veritatis eum soluta laudantium tempore non ab ullam optio? Harum, tempore vero voluptatem, molestias odio distinctio nemo numquam rerum fugiat quod non id eum dolore accusantium labore voluptate laboriosam quos error vitae velit esse eligendi consectetur ea. Aspernatur, assumenda numquam distinctio minima repellendus ab ducimus ipsa iusto, saepe quod, omnis dolorum ex provident perferendis quo quas ipsam quidem officia! Repellendus porro nam, ipsum eligendi quasi consectetur quas provident fugiat officiis doloremque autem assumenda asperiores ratione quidem!</p>
             </div>
            </main>
        

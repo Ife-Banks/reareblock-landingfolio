@@ -222,8 +222,14 @@
   .mr-1 {
     margin-right: calc(var(--spacing) * 1);
   }
+  .mb-10 {
+    margin-bottom: calc(var(--spacing) * 10);
+  }
   .ml-2 {
     margin-left: calc(var(--spacing) * 2);
+  }
+  .box-border {
+    box-sizing: border-box;
   }
   .block {
     display: block;
@@ -263,8 +269,17 @@
   .h-100 {
     height: calc(var(--spacing) * 100);
   }
+  .h-130 {
+    height: calc(var(--spacing) * 130);
+  }
   .h-150 {
     height: calc(var(--spacing) * 150);
+  }
+  .h-300 {
+    height: calc(var(--spacing) * 300);
+  }
+  .h-full {
+    height: 100%;
   }
   .h-screen {
     height: 100vh;
@@ -356,6 +371,21 @@
   .self-end {
     align-self: flex-end;
   }
+  .overflow-scroll {
+    overflow: scroll;
+  }
+  .overflow-x-hidden {
+    overflow-x: hidden;
+  }
+  .overflow-x-scroll {
+    overflow-x: scroll;
+  }
+  .overflow-y-hidden {
+    overflow-y: hidden;
+  }
+  .overflow-y-scroll {
+    overflow-y: scroll;
+  }
   .rounded-3xl {
     border-radius: var(--radius-3xl);
   }
@@ -401,17 +431,11 @@
   .bg-\[url\(\'\/public\/img\/ife\.jpg\'\)\,url\(\'\/public\/img\/ife\.jpeg\'\)\] {
     background-image: url('/public/img/ife.jpg'),url('/public/img/ife.jpeg');
   }
-  .bg-\[url\(\'\/public\/img\/ife\.jpg\'\)\,url\(\'\/public\/img\/ife\.jpg\'\)\] {
-    background-image: url('/public/img/ife.jpg'),url('/public/img/ife.jpg');
-  }
   .bg-\[url\(\'\/public\/img\/ife\.jpg\'\)\] {
     background-image: url('/public/img/ife.jpg');
   }
   .bg-\[length\:10px_10\,5px_5px\] {
     background-size: 10px 10,5px 5px;
-  }
-  .bg-\[length\:100\%_10\%\,5px_5px\] {
-    background-size: 100% 10%,5px 5px;
   }
   .bg-cover {
     background-size: cover;
@@ -424,9 +448,6 @@
   }
   .bg-\[position\:center_bottom_6rem\,center_bottom_0rem\] {
     background-position: center bottom 6rem,center bottom 0rem;
-  }
-  .bg-\[position\:center_bottom_6rem\,right_bottom\] {
-    background-position: center bottom 6rem,right bottom;
   }
   .bg-no-repeat {
     background-repeat: no-repeat;
@@ -451,6 +472,9 @@
   }
   .px-4 {
     padding-inline: calc(var(--spacing) * 4);
+  }
+  .px-5 {
+    padding-inline: calc(var(--spacing) * 5);
   }
   .px-6 {
     padding-inline: calc(var(--spacing) * 6);
@@ -549,9 +573,6 @@
   .underline {
     text-decoration-line: underline;
   }
-  .bg-blend-multiply {
-    background-blend-mode: multiply;
-  }
   .bg-blend-normal {
     background-blend-mode: normal;
   }
@@ -619,10 +640,87 @@
       }
     }
   }
+  .group-hover\:bg-\[url\(\'\/public\/img\/ife\.jpg\'\)\,url\(\'\/public\/img\/ife\.jpeg\'\)\] {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        background-image: url('/public/img/ife.jpg'),url('/public/img/ife.jpeg');
+      }
+    }
+  }
+  .group-hover\:bg-\[url\(\'\/public\/img\/ife\.jpg\'\)\] {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        background-image: url('/public/img/ife.jpg');
+      }
+    }
+  }
+  .group-hover\:bg-\[position\:center_bottom\,\] {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        background-position: center bottom,;
+      }
+    }
+  }
   .group-hover\:bg-\[position\:center_bottom\] {
     &:is(:where(.group):hover *) {
       @media (hover: hover) {
         background-position: center bottom;
+      }
+    }
+  }
+  .group-hover\:bg-\[position\:center_bottom_0rem\,\] {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        background-position: center bottom 0rem,;
+      }
+    }
+  }
+  .group-hover\:bg-\[position\:center_bottom_0rem\,center\] {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        background-position: center bottom 0rem,center;
+      }
+    }
+  }
+  .group-hover\:bg-\[position\:center_bottom_0rem\,center_bo\] {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        background-position: center bottom 0rem,center bo;
+      }
+    }
+  }
+  .group-hover\:bg-\[position\:center_bottom_0rem\,center_bott\] {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        background-position: center bottom 0rem,center bott;
+      }
+    }
+  }
+  .group-hover\:bg-\[position\:center_bottom_0rem\,center_bottom\] {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        background-position: center bottom 0rem,center bottom;
+      }
+    }
+  }
+  .group-hover\:bg-\[position\:center_bottom_0rem\,none\] {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        background-position: center bottom 0rem,none;
+      }
+    }
+  }
+  .group-hover\:bg-\[position\:center_bottom_0rem\] {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        background-position: center bottom 0rem;
+      }
+    }
+  }
+  .group-hover\:bg-\[position\:center_bottom_10rem\,\] {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        background-position: center bottom 10rem,;
       }
     }
   }
@@ -638,6 +736,16 @@
       translate: var(--tw-translate-x) var(--tw-translate-y);
     }
   }
+  .group-focus\:bg-\[position\:center_bottom\] {
+    &:is(:where(.group):focus *) {
+      background-position: center bottom;
+    }
+  }
+  .group-focus\:bg-\[position\:center_bottom_0rem\] {
+    &:is(:where(.group):focus *) {
+      background-position: center bottom 0rem;
+    }
+  }
   .group-active\:translate-y-6 {
     &:is(:where(.group):active *) {
       --tw-translate-y: calc(var(--spacing) * 6);
@@ -650,14 +758,14 @@
       translate: var(--tw-translate-x) var(--tw-translate-y);
     }
   }
-  .hover\:scale-100 {
-    &:hover {
-      @media (hover: hover) {
-        --tw-scale-x: 100%;
-        --tw-scale-y: 100%;
-        --tw-scale-z: 100%;
-        scale: var(--tw-scale-x) var(--tw-scale-y);
-      }
+  .group-active\:bg-\[position\:center_bottom\] {
+    &:is(:where(.group):active *) {
+      background-position: center bottom;
+    }
+  }
+  .group-active\:bg-\[position\:center_bottom_0rem\] {
+    &:is(:where(.group):active *) {
+      background-position: center bottom 0rem;
     }
   }
   .hover\:scale-110 {
@@ -765,16 +873,6 @@
       outline-style: none;
     }
   }
-  .active\:block {
-    &:active {
-      display: block;
-    }
-  }
-  .active\:inline-block {
-    &:active {
-      display: inline-block;
-    }
-  }
   .active\:border-r-4 {
     &:active {
       border-right-style: var(--tw-border-style);
@@ -807,6 +905,16 @@
       margin: auto;
     }
   }
+  .sm\:mt-30 {
+    @media (width >= 40rem) {
+      margin-top: calc(var(--spacing) * 30);
+    }
+  }
+  .sm\:mt-50 {
+    @media (width >= 40rem) {
+      margin-top: calc(var(--spacing) * 50);
+    }
+  }
   .sm\:grid {
     @media (width >= 40rem) {
       display: grid;
@@ -830,6 +938,28 @@
   .sm\:justify-end {
     @media (width >= 40rem) {
       justify-content: flex-end;
+    }
+  }
+  .sm\:text-sm {
+    @media (width >= 40rem) {
+      font-size: var(--text-sm);
+      line-height: var(--tw-leading, var(--text-sm--line-height));
+    }
+  }
+  .sm\:group-hover\:bg-\[position\:center_bottom_0rem\] {
+    @media (width >= 40rem) {
+      &:is(:where(.group):hover *) {
+        @media (hover: hover) {
+          background-position: center bottom 0rem;
+        }
+      }
+    }
+  }
+  .sm\:max-md\:self-start {
+    @media (width >= 40rem) {
+      @media (width < 48rem) {
+        align-self: flex-start;
+      }
     }
   }
   .md\:col-span-1 {
@@ -929,9 +1059,24 @@
       display: flex;
     }
   }
+  .lg\:w-50 {
+    @media (width >= 64rem) {
+      width: calc(var(--spacing) * 50);
+    }
+  }
+  .lg\:w-full {
+    @media (width >= 64rem) {
+      width: 100%;
+    }
+  }
   .lg\:basis-1\/5 {
     @media (width >= 64rem) {
       flex-basis: calc(1/5 * 100%);
+    }
+  }
+  .lg\:basis-3\/5 {
+    @media (width >= 64rem) {
+      flex-basis: calc(3/5 * 100%);
     }
   }
   .lg\:basis-4\/5 {
@@ -949,10 +1094,37 @@
       flex-direction: row-reverse;
     }
   }
+  .lg\:text-lg {
+    @media (width >= 64rem) {
+      font-size: var(--text-lg);
+      line-height: var(--tw-leading, var(--text-lg--line-height));
+    }
+  }
+  .lg\:text-sm {
+    @media (width >= 64rem) {
+      font-size: var(--text-sm);
+      line-height: var(--tw-leading, var(--text-sm--line-height));
+    }
+  }
   .lg\:text-xl {
     @media (width >= 64rem) {
       font-size: var(--text-xl);
       line-height: var(--tw-leading, var(--text-xl--line-height));
+    }
+  }
+  .xl\:flex {
+    @media (width >= 80rem) {
+      display: flex;
+    }
+  }
+  .xl\:flex-row-reverse {
+    @media (width >= 80rem) {
+      flex-direction: row-reverse;
+    }
+  }
+  .xl\:items-center {
+    @media (width >= 80rem) {
+      align-items: center;
     }
   }
   .dark\:bg-slate-300 {
