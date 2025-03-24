@@ -218,6 +218,9 @@
   .mt-20 {
     margin-top: calc(var(--spacing) * 20);
   }
+  .mt-30 {
+    margin-top: calc(var(--spacing) * 30);
+  }
   .mr-1 {
     margin-right: calc(var(--spacing) * 1);
   }
@@ -355,6 +358,9 @@
   .justify-evenly {
     justify-content: space-evenly;
   }
+  .justify-start {
+    justify-content: flex-start;
+  }
   .gap-10 {
     gap: calc(var(--spacing) * 10);
   }
@@ -378,6 +384,9 @@
   }
   .self-end {
     align-self: flex-end;
+  }
+  .self-start {
+    align-self: flex-start;
   }
   .overflow-hidden {
     overflow: hidden;
@@ -424,6 +433,9 @@
   .bg-gray-300 {
     background-color: var(--color-gray-300);
   }
+  .bg-\[url\(\'\/public\/img\/ife\.jpg\'\)\,url\(\'\/public\/img\/ife\.jpg\'\)\] {
+    background-image: url('/public/img/ife.jpg'),url('/public/img/ife.jpg');
+  }
   .bg-\[url\(\'\/public\/img\/ife\.jpg\'\)\] {
     background-image: url('/public/img/ife.jpg');
   }
@@ -459,6 +471,9 @@
   }
   .bg-\[position\:30\%_80\%\] {
     background-position: 30% 80%;
+  }
+  .bg-no-repeat {
+    background-repeat: no-repeat;
   }
   .object-cover {
     object-fit: cover;
@@ -860,6 +875,16 @@
       width: calc(var(--spacing) * 100);
     }
   }
+  .md\:basis-1\/5 {
+    @media (width >= 48rem) {
+      flex-basis: calc(1/5 * 100%);
+    }
+  }
+  .md\:basis-4\/5 {
+    @media (width >= 48rem) {
+      flex-basis: calc(4/5 * 100%);
+    }
+  }
   .md\:grid-cols-3 {
     @media (width >= 48rem) {
       grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -907,9 +932,40 @@
       padding-top: calc(var(--spacing) * 10);
     }
   }
+  .lg\:col-span-4 {
+    @media (width >= 64rem) {
+      grid-column: span 4 / span 4;
+    }
+  }
+  .lg\:flex {
+    @media (width >= 64rem) {
+      display: flex;
+    }
+  }
+  .lg\:basis-1\/5 {
+    @media (width >= 64rem) {
+      flex-basis: calc(1/5 * 100%);
+    }
+  }
+  .lg\:basis-4\/5 {
+    @media (width >= 64rem) {
+      flex-basis: calc(4/5 * 100%);
+    }
+  }
   .lg\:grid-cols-3 {
     @media (width >= 64rem) {
       grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+  .lg\:flex-row-reverse {
+    @media (width >= 64rem) {
+      flex-direction: row-reverse;
+    }
+  }
+  .lg\:text-xl {
+    @media (width >= 64rem) {
+      font-size: var(--text-xl);
+      line-height: var(--tw-leading, var(--text-xl--line-height));
     }
   }
   .dark\:bg-slate-300 {
