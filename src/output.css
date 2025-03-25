@@ -5,6 +5,10 @@
   :root, :host {
     --color-red-400: oklch(0.704 0.191 22.216);
     --color-red-500: oklch(0.637 0.237 25.331);
+    --color-green-300: oklch(0.871 0.15 154.449);
+    --color-blue-300: oklch(0.809 0.105 251.813);
+    --color-blue-600: oklch(0.546 0.245 262.881);
+    --color-blue-700: oklch(0.488 0.243 264.376);
     --color-indigo-500: oklch(0.585 0.233 277.117);
     --color-slate-300: oklch(0.869 0.022 252.894);
     --color-gray-100: oklch(0.967 0.003 264.542);
@@ -31,6 +35,7 @@
     --text-5xl--line-height: 1;
     --text-6xl: 3.75rem;
     --text-6xl--line-height: 1;
+    --font-weight-normal: 400;
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
     --font-weight-extrabold: 800;
@@ -195,6 +200,9 @@
   .mx-auto {
     margin-inline: auto;
   }
+  .mt-2 {
+    margin-top: calc(var(--spacing) * 2);
+  }
   .mt-3 {
     margin-top: calc(var(--spacing) * 3);
   }
@@ -269,17 +277,8 @@
   .h-100 {
     height: calc(var(--spacing) * 100);
   }
-  .h-130 {
-    height: calc(var(--spacing) * 130);
-  }
   .h-150 {
     height: calc(var(--spacing) * 150);
-  }
-  .h-300 {
-    height: calc(var(--spacing) * 300);
-  }
-  .h-full {
-    height: 100%;
   }
   .h-screen {
     height: 100vh;
@@ -371,21 +370,6 @@
   .self-end {
     align-self: flex-end;
   }
-  .overflow-scroll {
-    overflow: scroll;
-  }
-  .overflow-x-hidden {
-    overflow-x: hidden;
-  }
-  .overflow-x-scroll {
-    overflow-x: scroll;
-  }
-  .overflow-y-hidden {
-    overflow-y: hidden;
-  }
-  .overflow-y-scroll {
-    overflow-y: scroll;
-  }
   .rounded-3xl {
     border-radius: var(--radius-3xl);
   }
@@ -473,9 +457,6 @@
   .px-4 {
     padding-inline: calc(var(--spacing) * 4);
   }
-  .px-5 {
-    padding-inline: calc(var(--spacing) * 5);
-  }
   .px-6 {
     padding-inline: calc(var(--spacing) * 6);
   }
@@ -502,6 +483,9 @@
   }
   .pb-2 {
     padding-bottom: calc(var(--spacing) * 2);
+  }
+  .pl-2 {
+    padding-left: calc(var(--spacing) * 2);
   }
   .pl-10 {
     padding-left: calc(var(--spacing) * 10);
@@ -550,6 +534,10 @@
   .font-extrabold {
     --tw-font-weight: var(--font-weight-extrabold);
     font-weight: var(--font-weight-extrabold);
+  }
+  .font-normal {
+    --tw-font-weight: var(--font-weight-normal);
+    font-weight: var(--font-weight-normal);
   }
   .font-semibold {
     --tw-font-weight: var(--font-weight-semibold);
@@ -640,87 +628,10 @@
       }
     }
   }
-  .group-hover\:bg-\[url\(\'\/public\/img\/ife\.jpg\'\)\,url\(\'\/public\/img\/ife\.jpeg\'\)\] {
-    &:is(:where(.group):hover *) {
-      @media (hover: hover) {
-        background-image: url('/public/img/ife.jpg'),url('/public/img/ife.jpeg');
-      }
-    }
-  }
-  .group-hover\:bg-\[url\(\'\/public\/img\/ife\.jpg\'\)\] {
-    &:is(:where(.group):hover *) {
-      @media (hover: hover) {
-        background-image: url('/public/img/ife.jpg');
-      }
-    }
-  }
-  .group-hover\:bg-\[position\:center_bottom\,\] {
-    &:is(:where(.group):hover *) {
-      @media (hover: hover) {
-        background-position: center bottom,;
-      }
-    }
-  }
   .group-hover\:bg-\[position\:center_bottom\] {
     &:is(:where(.group):hover *) {
       @media (hover: hover) {
         background-position: center bottom;
-      }
-    }
-  }
-  .group-hover\:bg-\[position\:center_bottom_0rem\,\] {
-    &:is(:where(.group):hover *) {
-      @media (hover: hover) {
-        background-position: center bottom 0rem,;
-      }
-    }
-  }
-  .group-hover\:bg-\[position\:center_bottom_0rem\,center\] {
-    &:is(:where(.group):hover *) {
-      @media (hover: hover) {
-        background-position: center bottom 0rem,center;
-      }
-    }
-  }
-  .group-hover\:bg-\[position\:center_bottom_0rem\,center_bo\] {
-    &:is(:where(.group):hover *) {
-      @media (hover: hover) {
-        background-position: center bottom 0rem,center bo;
-      }
-    }
-  }
-  .group-hover\:bg-\[position\:center_bottom_0rem\,center_bott\] {
-    &:is(:where(.group):hover *) {
-      @media (hover: hover) {
-        background-position: center bottom 0rem,center bott;
-      }
-    }
-  }
-  .group-hover\:bg-\[position\:center_bottom_0rem\,center_bottom\] {
-    &:is(:where(.group):hover *) {
-      @media (hover: hover) {
-        background-position: center bottom 0rem,center bottom;
-      }
-    }
-  }
-  .group-hover\:bg-\[position\:center_bottom_0rem\,none\] {
-    &:is(:where(.group):hover *) {
-      @media (hover: hover) {
-        background-position: center bottom 0rem,none;
-      }
-    }
-  }
-  .group-hover\:bg-\[position\:center_bottom_0rem\] {
-    &:is(:where(.group):hover *) {
-      @media (hover: hover) {
-        background-position: center bottom 0rem;
-      }
-    }
-  }
-  .group-hover\:bg-\[position\:center_bottom_10rem\,\] {
-    &:is(:where(.group):hover *) {
-      @media (hover: hover) {
-        background-position: center bottom 10rem,;
       }
     }
   }
@@ -741,11 +652,6 @@
       background-position: center bottom;
     }
   }
-  .group-focus\:bg-\[position\:center_bottom_0rem\] {
-    &:is(:where(.group):focus *) {
-      background-position: center bottom 0rem;
-    }
-  }
   .group-active\:translate-y-6 {
     &:is(:where(.group):active *) {
       --tw-translate-y: calc(var(--spacing) * 6);
@@ -761,11 +667,6 @@
   .group-active\:bg-\[position\:center_bottom\] {
     &:is(:where(.group):active *) {
       background-position: center bottom;
-    }
-  }
-  .group-active\:bg-\[position\:center_bottom_0rem\] {
-    &:is(:where(.group):active *) {
-      background-position: center bottom 0rem;
     }
   }
   .hover\:scale-110 {
@@ -810,10 +711,38 @@
       }
     }
   }
+  .hover\:text-blue-300 {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-blue-300);
+      }
+    }
+  }
+  .hover\:text-blue-600 {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-blue-600);
+      }
+    }
+  }
+  .hover\:text-blue-700 {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-blue-700);
+      }
+    }
+  }
   .hover\:text-gray-700 {
     &:hover {
       @media (hover: hover) {
         color: var(--color-gray-700);
+      }
+    }
+  }
+  .hover\:text-green-300 {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-green-300);
       }
     }
   }
@@ -905,16 +834,6 @@
       margin: auto;
     }
   }
-  .sm\:mt-30 {
-    @media (width >= 40rem) {
-      margin-top: calc(var(--spacing) * 30);
-    }
-  }
-  .sm\:mt-50 {
-    @media (width >= 40rem) {
-      margin-top: calc(var(--spacing) * 50);
-    }
-  }
   .sm\:grid {
     @media (width >= 40rem) {
       display: grid;
@@ -944,22 +863,6 @@
     @media (width >= 40rem) {
       font-size: var(--text-sm);
       line-height: var(--tw-leading, var(--text-sm--line-height));
-    }
-  }
-  .sm\:group-hover\:bg-\[position\:center_bottom_0rem\] {
-    @media (width >= 40rem) {
-      &:is(:where(.group):hover *) {
-        @media (hover: hover) {
-          background-position: center bottom 0rem;
-        }
-      }
-    }
-  }
-  .sm\:max-md\:self-start {
-    @media (width >= 40rem) {
-      @media (width < 48rem) {
-        align-self: flex-start;
-      }
     }
   }
   .md\:col-span-1 {
@@ -1074,11 +977,6 @@
       flex-basis: calc(1/5 * 100%);
     }
   }
-  .lg\:basis-3\/5 {
-    @media (width >= 64rem) {
-      flex-basis: calc(3/5 * 100%);
-    }
-  }
   .lg\:basis-4\/5 {
     @media (width >= 64rem) {
       flex-basis: calc(4/5 * 100%);
@@ -1098,33 +996,6 @@
     @media (width >= 64rem) {
       font-size: var(--text-lg);
       line-height: var(--tw-leading, var(--text-lg--line-height));
-    }
-  }
-  .lg\:text-sm {
-    @media (width >= 64rem) {
-      font-size: var(--text-sm);
-      line-height: var(--tw-leading, var(--text-sm--line-height));
-    }
-  }
-  .lg\:text-xl {
-    @media (width >= 64rem) {
-      font-size: var(--text-xl);
-      line-height: var(--tw-leading, var(--text-xl--line-height));
-    }
-  }
-  .xl\:flex {
-    @media (width >= 80rem) {
-      display: flex;
-    }
-  }
-  .xl\:flex-row-reverse {
-    @media (width >= 80rem) {
-      flex-direction: row-reverse;
-    }
-  }
-  .xl\:items-center {
-    @media (width >= 80rem) {
-      align-items: center;
     }
   }
   .dark\:bg-slate-300 {
